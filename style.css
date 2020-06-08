@@ -156,16 +156,57 @@ text-shadow: orange 0 0 4px;
 }
 .close{
   position: absolute;
-  width: 80px;
-  height: 80px;
+  width: 21px;
+  height: 30px;
   top: 0;
   right: 0;
   background-color: transparent;
-  background-image: url("img/x.svg");
+  background-image: url("img/fff.svg");
   background-repeat: no-repeat;
   border: none;
   cursor: pointer;
 }
+
+.popup-name-and-email{
+  display: flex;
+  width: 760px;
+
+}
+.label-header{
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+}
+.input-header{
+  font: inherit;
+  box-sizing: border-box;
+  width: 360px;
+  margin-bottom: 35px;
+  padding: 14px;
+  border: 2px solid #d7dcde;
+  border-radius: 3px;
+}
+.inputing{
+  display: flex;
+  flex-direction: column;
+}
+
+.send{
+   width: 130px;
+   height: 40px;
+ }
+ .input-text{
+   font: inherit;
+   box-sizing: border-box;
+   width: 100%;
+   margin-bottom: 35px;
+   padding: 14px;
+   border: 2px solid #d7dcde;
+   border-radius: 3px;
+
+ }
+
 .vis{
   display: block;
 }
