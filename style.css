@@ -196,6 +196,11 @@ text-shadow: orange 0 0 4px;
    width: 130px;
    height: 40px;
  }
+ .text-input{
+  display:flex;
+  flex-direction: column;
+  width: 95%;
+ }
  .input-text{
    font: inherit;
    box-sizing: border-box;
@@ -206,7 +211,53 @@ text-shadow: orange 0 0 4px;
    border-radius: 3px;
 
  }
+++
 
-.vis{
+ .popap-button{
+  margin: 10px 0;
+  padding: 14px 80px;
+  
+ }
+
+
+@keyframes show{
+  0%{opacity: 0;}
+  100% {opacity: 1;}
+}
+.popap-show{
   display: block;
+  animation-name: show;
+  animation-duration: 0.8s;
+
+}
+
+.yes{
+  box-sizing: border-box;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+  background-color: white;
+  margin-left: -480px;
+  margin-top: -297px;
+  width: 960px;
+  padding: 70px 100px;
+  box-shadow: 0 25px  45px 0 rgba(0,0,0,0.75);
+}
+
+.wrapper {
+  display: inline-block;
+  width: 55px; 
+  height: 55px; 
+  text-align: center; 
+  padding-top: 3px;
+}
+
+.wrapper--check {
+  background: teal;
+}
+
+.yes-show{
+  display:block;
 }

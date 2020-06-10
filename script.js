@@ -7,11 +7,18 @@ document.getElementById("phot").src="img/banner-1.jpg.png"
 var popap=document.querySelector(".kont-popap");
 var popapClose=document.querySelector(".close");
 var form=document.querySelector(".popap");
+var yes=document.querySelector(".yes");
+var popapSub = document.querySelector('.popap-button')
 popap.addEventListener("click",function(evt){
   evt.preventDefault();
-  form.classList.add("vis");
+  form.classList.add("popap-show");
 });
 popapClose.addEventListener("click",function(evt){
     evt.preventDefault();
-    form.classList.remove("vis");
+    form.classList.remove("popap-show");
 });
+popapSub.addEventListener('click',function(evt){
+	evt.preventDefault();
+    form.classList.remove("popap-show");
+    yes.classList.add('yes-show');	
+})

@@ -38,6 +38,7 @@
         <a class="footer-down" href="https://vk.com/artemnebarsuk" target="_blank">Контактов нет, я сам вас найду</a>
         <a href="form.html" class="knopka kont-popap">Я попап</a>
       </footer>
+
       <section class="popap">
         <form action="#" method="post" class="popap-form">
           <div class= "popap-container">
@@ -46,21 +47,36 @@
           </div>
           <div class='popup-name-and-email'>
             <div class='inputing'>
-              <label class='label-header'>Ваше Имя</label>
-              <input class='input-header'type=text placeholder="Имя Фамилия">
+              <label for='name' class='label-header'>Ваше Имя</label>
+              <input id='name' name='name' class='input-header'type=text placeholder="Имя Фамилия">
             </div>
             <div class='inputing'>
-              <label class='label-header'>Ваш e-mail</label>
-              <input class='input-header' type=text placeholder="email@example.com">
+              <label for='email' class='label-header'>Ваш e-mail</label>
+              <input id='email' name='email' class='input-header' type='email' placeholder="email@example.com">
             </div>
           </div>
           <div class="text-input">
-            <label class="label-header"></label>
-            <textarea  rows="5" class="input-text"></textarea>
+            <label for='user-message' class="label-header">Текст письма:</label>
+            <textarea  id='user-message' name='user-message' placeholder='Ваше сообщение' rows="5" class="input-text"></textarea>
           </div>
-            <button type="button" class="knopka">отправить</button>
+            <button type="button" class="knopka popap-button">отправить</button>
         </form>
       </section>
+
+      <section class='yes'>
+        <div class="wrapper wrapper--check">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" 
+                   stroke="white"  stroke-width="3" stroke-dasharray="100">
+            <path id="check" d="M 12,22 L 22,31 L 36,13" 
+                      stroke-dashoffset="0">
+              <animate attributeName="stroke-dashoffset" 
+                           from="100" to="0" repeatCount="indefinite" dur="3s"></animate>
+            </path>
+          </svg>
+        </div>
+      </section>
+
+
     </div>
 
 
