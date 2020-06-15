@@ -112,15 +112,67 @@ text-shadow: orange 0 0 4px;
   list-style: none;
 }
 
-.site-footer {
+.contacts{
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 54px 0;
+}
+
+.contacts-map{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  border: none;
+  outline: none;
+}
+
+.contacts-block{
+  position: relative;
+  z-index: 2;
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.contacts-block-card{
+  position: relative;
+  box-sizing: border-box;
+  width: 320px;
+  padding: 46px 50px;
+  background-color: green;
+}
+
+.contacts-block-header{
+  margin: 5px 0;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.contacts-block-message{
+  margin: 21px 0;
+  color: white;
+  line-height: 18px;
+  width: 210px;
+
+}
+
+.site-footer{
   display: flex;
   justify-content: space-between;
   color: #999999;
 }
+
 .footer-down{
   color: white;
   text-shadow: black 0 0 5px;
 }
+
 .popap{
   box-sizing: border-box;
   display: none;
@@ -172,12 +224,14 @@ text-shadow: orange 0 0 4px;
   width: 760px;
 
 }
+
 .label-header{
   margin-bottom: 10px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
 }
+
 .input-header{
   font: inherit;
   box-sizing: border-box;
@@ -187,6 +241,7 @@ text-shadow: orange 0 0 4px;
   border: 2px solid #d7dcde;
   border-radius: 3px;
 }
+
 .inputing{
   display: flex;
   flex-direction: column;
@@ -196,11 +251,13 @@ text-shadow: orange 0 0 4px;
    width: 130px;
    height: 40px;
  }
+
  .text-input{
   display:flex;
   flex-direction: column;
   width: 95%;
  }
+
  .input-text{
    font: inherit;
    box-sizing: border-box;
@@ -211,7 +268,7 @@ text-shadow: orange 0 0 4px;
    border-radius: 3px;
 
  }
-++
+
 
  .popap-button{
   margin: 10px 0;
